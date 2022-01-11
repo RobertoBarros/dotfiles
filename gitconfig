@@ -49,3 +49,6 @@
 
 [pull]
   rebase = false
+[user]
+	email = roberto.f.barros@gmail.com
+	name = Roberto Barros

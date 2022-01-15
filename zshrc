@@ -1,10 +1,54 @@
 ZSH=$HOME/.oh-my-zsh
 
 # You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+
+ZSH_THEME="spaceship"
+SPACESHIP_PROMPT_ORDER=(
+    time          # Time stampts section
+    user          # Username section
+    dir           # Current directory section
+    host          # Hostname section
+    git           # Git section (git_branch + git_status)
+#    hg            # Mercurial section (hg_branch  + hg_status)
+#    gradle        # Gradle section
+#    maven         # Maven section
+#    package       # Package version
+    node          # Node.js section
+    ruby          # Ruby section
+#    elm           # Elm section
+#    elixir        # Elixir section
+#    xcode         # Xcode section
+#    swift         # Swift section
+#    golang        # Go section
+#    php           # PHP section
+#    rust          # Rust section
+#    haskell       # Haskell Stack section
+#    julia         # Julia section
+#    docker        # Docker section
+#    aws           # Amazon Web Services section
+#    gcloud        # Google Cloud Platform section
+#    venv          # virtualenv section
+#    conda         # conda virtualenv section
+#    pyenv         # Pyenv section
+#    dotnet        # .NET section
+#    ember         # Ember.js section
+#    kubectl       # Kubectl context section
+#    terraform     # Terraform workspace section
+#    ibmcloud      # IBM Cloud section
+    exec_time     # Execution time
+    line_sep      # Line break
+    battery       # Battery level and status
+    vi_mode       # Vi-mode indicator
+    jobs          # Background jobs indicator
+    exit_code     # Exit code section
+    char          # Prompt character
+  )
+
+SPACESHIP_PROMPT_DEFAULT_PREFIX=""
 
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
-plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv)
+plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv rbenv macos aliases web-search)
 
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/docs/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1

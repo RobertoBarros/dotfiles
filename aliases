@@ -9,3 +9,4 @@ alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 alias stt="echo 'Launching VS Code instead of Sublime Text... (cf ~/.aliases)' && code ."
 
 alias gs='git status'
+alias l='exa -l --icons --no-permissions --no-user --git -F'

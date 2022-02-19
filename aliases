@@ -10,3 +10,4 @@ alias stt="echo 'Launching VS Code instead of Sublime Text... (cf ~/.aliases)' &
 
 alias gs='git status'
 alias l='exa -l --icons --no-permissions --no-user --git -F'
+alias ll='exa -la --icons --no-permissions --no-user --git -F'

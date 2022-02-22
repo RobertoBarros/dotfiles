@@ -122,3 +122,6 @@ export EDITOR=code
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Instalado com `brew install zsh-autosuggestions`
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh

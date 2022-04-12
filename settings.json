@@ -1,4 +1,4 @@
-{
+ {
     "[python]":
     {
         "editor.bracketPairColorization.enabled": false,
@@ -85,6 +85,11 @@
       "*": true,
       "yaml": false,
       "plaintext": false,
-      "markdown": false
-    }
+      "markdown": false,
+      "html.erb": false,
+      "ruby": false,
+      "scss": false,
+      "javascript": false
+    },
+    "workbench.colorTheme": "Cobalt Next"
 }

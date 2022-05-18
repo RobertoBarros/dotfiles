@@ -13,3 +13,5 @@ alias gitclean='git branch --merged | egrep -v "(^\*|master|main|dev)" | xargs g
 
 alias l='exa -l --icons --no-permissions --no-user --git -F'
 alias ll='exa -la --icons --no-permissions --no-user --git -F'
+
+unalias lt # para usar o localtunnel

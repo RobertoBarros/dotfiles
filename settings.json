@@ -87,7 +87,7 @@
       "plaintext": false,
       "markdown": false,
       "html.erb": false,
-      "ruby": false,
+      "ruby": true,
       "scss": false,
       "javascript": false
     },

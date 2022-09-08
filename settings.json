@@ -71,6 +71,9 @@
     },
     "telemetry.telemetryLevel": "off",
     "window.restoreWindows": "none",
+    "workbench.colorCustomizations": {
+      "tab.activeBackground": "#F44336"
+    },
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,

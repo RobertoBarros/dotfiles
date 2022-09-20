@@ -46,7 +46,8 @@
         "log": true,
         "node_modules": true,
         "public/packs": true,
-        "tmp": true
+        "tmp": true,
+        ".vscode": true
     },
     "files.hotExit": "off",
     "files.insertFinalNewline": true,

@@ -14,6 +14,6 @@ alias gitclean='git branch --merged | egrep -v "(^\*|master|main|dev)" | xargs g
 alias l='exa -l --icons --no-permissions --no-user --git -F'
 alias ll='exa -la --icons --no-permissions --no-user --git -F'
 
-alias lewagon='git -C ~/code/RobertoBarros/dotfiles checkout master && exec zsh && cd ~'
+alias lewagon='git -C ~/code/RobertoBarros/dotfiles checkout master && cd ~ &&  exec zsh'
 
 unalias lt # para usar o localtunnel

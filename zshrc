@@ -124,6 +124,6 @@ export EDITOR=code
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Instalado com `brew install zsh-autosuggestions`
-# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

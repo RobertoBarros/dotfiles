@@ -84,7 +84,7 @@
     "editor.inlineSuggest.enabled": true,
     "files.autoSave": "onFocusChange",
     "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": false,
+    "editor.fontLigatures": true,
     "editor.wordWrap": "on",
     "github.copilot.enable": {
       "*": true,

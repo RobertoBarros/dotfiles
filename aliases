@@ -16,4 +16,6 @@ alias ll='exa -la --icons --no-permissions --no-user --git -F'
 
 alias lewagon='git -C ~/code/RobertoBarros/dotfiles checkout master && cd ~ &&  exec zsh'
 
+alias gitignore-create='touch .gitignore && echo "node_modules/" >> .gitignore && git rm -r --cached node_modules ; git status'
+
 unalias lt # para usar o localtunnel

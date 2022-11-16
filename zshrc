@@ -125,3 +125,5 @@ export EDITOR=code
 
 # Instalado com `brew install zsh-autosuggestions`
 # source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

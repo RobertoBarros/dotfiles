@@ -96,10 +96,5 @@
       "scss": false,
       "javascript": false
     },
-<<<<<<< HEAD
     "workbench.colorTheme": "Penumbra Dark Contrast+"
-=======
-    "workbench.colorTheme": "Solarized Light",
-    "window.zoomLevel": 1
->>>>>>> lewagon
 }

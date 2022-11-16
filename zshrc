@@ -10,8 +10,8 @@ ZSH=$HOME/.oh-my-zsh
 # You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 
 
-# source ~/powerlevel10k/powerlevel10k.zsh-theme
-ZSH_THEME="robbyrussell" # Le Wagon theme
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+# ZSH_THEME="robbyrussell" # Le Wagon theme
 # ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_ORDER=(
     time          # Time stampts section

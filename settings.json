@@ -84,7 +84,7 @@
     "editor.inlineSuggest.enabled": true,
     "files.autoSave": "onFocusChange",
     "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
+    "editor.fontLigatures": false,
     "editor.wordWrap": "on",
     "github.copilot.enable": {
       "*": true,
@@ -96,5 +96,10 @@
       "scss": false,
       "javascript": false
     },
+<<<<<<< HEAD
     "workbench.colorTheme": "Penumbra Dark Contrast+"
+=======
+    "workbench.colorTheme": "Solarized Light",
+    "window.zoomLevel": 1
+>>>>>>> lewagon
 }

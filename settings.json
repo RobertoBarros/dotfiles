@@ -83,6 +83,8 @@
     "workbench.startupEditor": "newUntitledFile",
     "editor.inlineSuggest.enabled": true,
     "files.autoSave": "onFocusChange",
+    "ruby.useLanguageServer": true,
+    "ruby.intellisense": "rubyLocate",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.wordWrap": "on",

@@ -13,5 +13,9 @@
   {
     "key": "alt+tab",
     "command": "workbench.action.quickSwitchWindow"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "search.action.openEditor"
   }
 ]

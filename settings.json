@@ -93,10 +93,10 @@
       "yaml": false,
       "plaintext": false,
       "markdown": false,
-      "html.erb": false,
+      "html.erb": true,
       "ruby": true,
-      "scss": false,
-      "javascript": false
+      "scss": true,
+      "javascript": true
     },
     "workbench.colorTheme": "Penumbra Dark Contrast+"
 }

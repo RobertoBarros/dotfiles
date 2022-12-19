@@ -98,5 +98,6 @@
       "scss": true,
       "javascript": true
     },
-    "workbench.colorTheme": "Penumbra Dark Contrast+"
+    "workbench.colorTheme": "Penumbra Dark Contrast+",
+    "terminal.integrated.fontFamily": "MesloLGS NF"
 }

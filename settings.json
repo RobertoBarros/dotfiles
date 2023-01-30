@@ -99,5 +99,11 @@
       "javascript": true
     },
     "workbench.colorTheme": "Penumbra Dark Contrast+",
-    "terminal.integrated.fontFamily": "MesloLGS NF"
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "tailwindCSS.includeLanguages": {
+      "erb": "html"
+    },
+    "files.associations": {
+      "*.html.erb": "erb"
+  },
 }

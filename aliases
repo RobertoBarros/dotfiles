@@ -4,3 +4,18 @@ alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
+
+# NOTE: On Q3 2021, Le Wagon decided to change the Web Dev curriculum default text editor
+alias stt="echo 'Launching VS Code instead of Sublime Text... (cf ~/.aliases)' && code ."
+
+alias gs='git status'
+alias gitclean='git branch --merged | egrep -v "(^\*|master|main|dev)" | xargs git branch -d && git remote prune origin'
+
+alias l='exa -l --icons --no-permissions --no-user --git -F'
+alias ll='exa -la --icons --no-permissions --no-user --git -F'
+
+alias lewagon='git -C ~/code/RobertoBarros/dotfiles checkout lewagon && cd ~ &&  exec zsh'
+
+alias gitignore-create='touch .gitignore && echo "node_modules/" >> .gitignore && git rm -r --cached node_modules ; git status'
+
+unalias lt # para usar o localtunnel

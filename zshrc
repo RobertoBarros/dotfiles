@@ -10,7 +10,8 @@ ZSH=$HOME/.oh-my-zsh
 # You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+# source ~/powerlevel10k/powerlevel10k.zsh-theme
+ZSH_THEME="powerlevel10k/powerlevel10k"
 # ZSH_THEME="robbyrussell" # Le Wagon theme
 # ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_ORDER=(
@@ -116,9 +117,6 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-<<<<<<< HEAD
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-=======
 
 export BUNDLER_EDITOR=code
 export EDITOR=code
@@ -127,9 +125,8 @@ export EDITOR=code
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Instalado com `brew install zsh-autosuggestions`
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-source /Users/roberto/.docker/init-zsh.sh || true # Added by Docker Desktop
->>>>>>> e2f144dcade279bb186273772c2e1aacef7e265d
+# source /Users/roberto/.docker/init-zsh.sh || true # Added by Docker Desktop

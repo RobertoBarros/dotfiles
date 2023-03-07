@@ -131,3 +131,4 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # source /Users/roberto/.docker/init-zsh.sh || true # Added by Docker Desktop
 source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"

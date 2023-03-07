@@ -11,7 +11,7 @@ ZSH=$HOME/.oh-my-zsh
 
 
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 # ZSH_THEME="robbyrussell" # Le Wagon theme
 # ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_ORDER=(
@@ -130,3 +130,4 @@ export EDITOR=code
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # source /Users/roberto/.docker/init-zsh.sh || true # Added by Docker Desktop
+source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme

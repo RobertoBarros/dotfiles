@@ -108,4 +108,5 @@
       "*.html.erb": "erb"
   },
   "terminal.integrated.env.osx": {},
+  "security.workspace.trust.untrustedFiles": "open",
 }

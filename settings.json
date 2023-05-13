@@ -110,4 +110,7 @@
   },
   "terminal.integrated.env.osx": {},
   "security.workspace.trust.untrustedFiles": "open",
+  "editor.quickSuggestions": {
+    "other": "off"
+  },
 }

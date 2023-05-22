@@ -18,4 +18,6 @@ alias lewagon='git -C ~/code/RobertoBarros/dotfiles checkout lewagon && cd ~ && 
 
 alias gitignore-create='touch .gitignore && echo "node_modules/" >> .gitignore && git rm -r --cached node_modules ; git status'
 
+alias remove-node-modules="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
+
 unalias lt # para usar o localtunnel

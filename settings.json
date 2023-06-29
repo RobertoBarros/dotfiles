@@ -113,4 +113,5 @@
   "editor.quickSuggestions": {
     "other": "off"
   },
+  "terminal.integrated.env.linux": {},
 }

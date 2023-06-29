@@ -70,6 +70,12 @@ ZSH_DISABLE_COMPFIX=true
 source "${ZSH}/oh-my-zsh.sh"
 unalias rm # No interactive rm by default (brought by plugins/common-aliases)
 
+
+# Problema da gem blazer
+# https://stackoverflow.com/a/53404317
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+
 # Load rbenv if installed (to manage your Ruby versions)
 export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
 type -a rbenv > /dev/null && eval "$(rbenv init -)"

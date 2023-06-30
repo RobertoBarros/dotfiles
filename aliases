@@ -11,8 +11,8 @@ alias stt="echo 'Launching VS Code instead of Sublime Text... (cf ~/.aliases)' &
 alias gs='git status'
 alias gitclean='git branch --merged | egrep -v "(^\*|master|main|dev)" | xargs git branch -d && git remote prune origin'
 
-alias l='exa -l --icons --no-permissions --no-user'
-alias ll='exa -la --icons --no-permissions --no-user'
+alias l='exa -l --icons --no-permissions --no-user --git -F'
+alias ll='exa -la --icons --no-permissions --no-user --git -F '
 
 alias lewagon='git -C ~/code/RobertoBarros/dotfiles checkout lewagon && cd ~ &&  exec zsh'
 

@@ -68,7 +68,6 @@ ZSH_DISABLE_COMPFIX=true
 
 # Actually load Oh-My-Zsh
 source "${ZSH}/oh-my-zsh.sh"
-unalias rm # No interactive rm by default (brought by plugins/common-aliases)
 
 
 # Problema da gem blazer
@@ -131,7 +130,7 @@ export EDITOR=code
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Instalado com `brew install zsh-autosuggestions`
-# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 

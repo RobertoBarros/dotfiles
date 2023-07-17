@@ -92,5 +92,6 @@
       "javascript": false
     },
     "workbench.colorTheme": "Solarized Light",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "terminal.integrated.env.osx": {}
 }

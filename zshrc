@@ -9,6 +9,9 @@ ZSH=$HOME/.oh-my-zsh
 
 # You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 
+# Problema da gem blazer
+# https://stackoverflow.com/a/53404317
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
 ZSH_THEME="robbyrussell" # Le Wagon theme

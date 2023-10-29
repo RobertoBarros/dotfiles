@@ -111,7 +111,8 @@
   "terminal.integrated.env.osx": {},
   "security.workspace.trust.untrustedFiles": "open",
   "editor.quickSuggestions": {
-    "other": "off"
+    "other": "on"
   },
   "terminal.integrated.env.linux": {},
+  "window.zoomLevel": -1,
 }

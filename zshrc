@@ -139,3 +139,18 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 export PATH="/usr/local/postgresql@15/bin:$PATH"
 
 # eval "$(github-copilot-cli alias -- "$0")"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/roberto/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/roberto/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/roberto/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/roberto/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<

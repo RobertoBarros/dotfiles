@@ -130,15 +130,15 @@ export EDITOR=code
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Instalado com `brew install zsh-autosuggestions`
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # source /Users/roberto/.docker/init-zsh.sh || true # Added by Docker Desktop
-source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+export PATH="/usr/local/postgresql@15/bin:$PATH"
 
-eval "$(github-copilot-cli alias -- "$0")"
+# eval "$(github-copilot-cli alias -- "$0")"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -154,4 +154,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-

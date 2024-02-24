@@ -111,8 +111,10 @@
   "terminal.integrated.env.osx": {},
   "security.workspace.trust.untrustedFiles": "open",
   "editor.quickSuggestions": {
-    "other": "on"
+    "other": "on",
+    "strings": "on"
   },
   "terminal.integrated.env.linux": {},
   "window.zoomLevel": -1,
+  "svelte.enable-ts-plugin": true,
 }

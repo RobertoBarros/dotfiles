@@ -14,6 +14,7 @@ ZSH=$HOME/.oh-my-zsh
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_THEME="robbyrussell" # Le Wagon theme
 # ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_ORDER=(
@@ -70,7 +71,12 @@ ZSH_DISABLE_COMPFIX=true
 
 # Actually load Oh-My-Zsh
 source "${ZSH}/oh-my-zsh.sh"
-unalias rm # No interactive rm by default (brought by plugins/common-aliases)
+
+
+# Problema da gem blazer
+# https://stackoverflow.com/a/53404317
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
 
 # Load rbenv if installed (to manage your Ruby versions)
 export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
@@ -127,6 +133,12 @@ export EDITOR=code
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Instalado com `brew install zsh-autosuggestions`
-# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# source /Users/roberto/.docker/init-zsh.sh || true # Added by Docker Desktop
+# source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+
+eval "$(github-copilot-cli alias -- "$0")"

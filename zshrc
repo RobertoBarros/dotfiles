@@ -130,12 +130,15 @@ export EDITOR=code
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Instalado com `brew install zsh-autosuggestions`
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # source /Users/roberto/.docker/init-zsh.sh || true # Added by Docker Desktop
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# Instalado com `brew install powerlevel10k`
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+
 export PATH="/usr/local/postgresql@15/bin:$PATH"
 
 # eval "$(github-copilot-cli alias -- "$0")"

@@ -4,3 +4,5 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 type -a pyenv > /dev/null && eval "$(pyenv init --path)"
 
 eval "$(/usr/local/bin/brew shellenv)"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"

@@ -130,14 +130,23 @@ export EDITOR=code
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Instalado com `brew install zsh-autosuggestions`
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [[ -f /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+  source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+elif [[ -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+  source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # source /Users/roberto/.docker/init-zsh.sh || true # Added by Docker Desktop
 
 # Instalado com `brew install powerlevel10k`
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+if [[ -f /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme ]]; then
+  source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+elif [[ -f /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme ]]; then
+  source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
+fi
 
 export PATH="/usr/local/postgresql@15/bin:$PATH"
 

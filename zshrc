@@ -149,6 +149,7 @@ elif [[ -f /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme ]]; then
 fi
 
 export PATH="/usr/local/postgresql@15/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 
 # eval "$(github-copilot-cli alias -- "$0")"
 
@@ -166,3 +167,4 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+export THOR_MERGE="code --wait"

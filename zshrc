@@ -148,8 +148,8 @@ elif [[ -f /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme ]]; then
   source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
 fi
 
-export PATH="/usr/local/postgresql@15/bin:$PATH"
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PATH="/usr/local/postgresql@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
 # eval "$(github-copilot-cli alias -- "$0")"
 

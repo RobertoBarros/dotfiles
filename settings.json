@@ -103,7 +103,7 @@
     "workbench.colorTheme": "Penumbra Dark Contrast+",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "tailwindCSS.includeLanguages": {
-      "erb": "html"
+      "erb": "html",
     },
     "files.associations": {
       "*.html.erb": "erb"

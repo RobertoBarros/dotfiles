@@ -115,6 +115,7 @@
     "strings": "on"
   },
   "terminal.integrated.env.linux": {},
+  "terminal.integrated.fontSize": 16,
   "window.zoomLevel": -1,
   "svelte.enable-ts-plugin": true,
 }

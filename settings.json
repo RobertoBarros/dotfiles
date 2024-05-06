@@ -117,4 +117,30 @@
   "terminal.integrated.env.linux": {},
   "window.zoomLevel": -1,
   "svelte.enable-ts-plugin": true,
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true,
+    "diagnostics": true,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": true,
+    "selectionRanges": true,
+    "semanticHighlighting": true,
+    "completion": true,
+    "codeLens": true,
+    "definition": true,
+    "workspaceSymbol": true,
+    "signatureHelp": true
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "testdouble.vscode-standard-ruby"
+  },
+  "rubyLsp.rubyVersionManager": {
+    "identifier": "rbenv"
+  },
+  "editor.formatOnSave": true,
 }

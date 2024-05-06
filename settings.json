@@ -103,7 +103,7 @@
     "workbench.colorTheme": "Penumbra Dark Contrast+",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "tailwindCSS.includeLanguages": {
-      "erb": "html"
+      "erb": "html",
     },
     "files.associations": {
       "*.html.erb": "erb"
@@ -115,6 +115,7 @@
     "strings": "on"
   },
   "terminal.integrated.env.linux": {},
+  "terminal.integrated.fontSize": 16,
   "window.zoomLevel": -1,
   "svelte.enable-ts-plugin": true,
   "rubyLsp.enabledFeatures": {

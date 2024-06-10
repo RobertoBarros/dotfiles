@@ -100,7 +100,7 @@
       "javascript": true,
       "html": true
     },
-    "workbench.colorTheme": "Penumbra Dark Contrast+",
+    "workbench.colorTheme": "Tokyo Night",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "tailwindCSS.includeLanguages": {
       "erb": "html",

@@ -116,7 +116,7 @@
   },
   "terminal.integrated.env.linux": {},
   "terminal.integrated.fontSize": 16,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "svelte.enable-ts-plugin": true,
   "rubyLsp.enabledFeatures": {
     "codeActions": true,

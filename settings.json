@@ -85,7 +85,7 @@
     "files.autoSave": "onFocusChange",
     "ruby.useLanguageServer": true,
     "ruby.intellisense": "rubyLocate",
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "  ",
     "editor.fontLigatures": true,
     "editor.wordWrap": "on",
     "github.copilot.enable": {
@@ -101,7 +101,7 @@
       "html": true
     },
     "workbench.colorTheme": "Tokyo Night",
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
     "tailwindCSS.includeLanguages": {
       "erb": "html",
     },

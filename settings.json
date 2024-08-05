@@ -104,6 +104,9 @@
   "tailwindCSS.includeLanguages": {
     "erb": "html",
   },
+  "tailwindCSS.experimental.classRegex": [
+    "\\bclass:\\s*['\"]([^'\"]*)['\"]"
+  ],
   "files.associations": {
     "*.html.erb": "erb"
   },

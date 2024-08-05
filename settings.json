@@ -1,112 +1,111 @@
 {
-    "[python]":
-    {
-        "editor.bracketPairColorization.enabled": false,
-        "editor.guides.bracketPairs": false,
-        "editor.tabSize": 4
-    },
-    "editor.bracketPairColorization.enabled": true,
-    "editor.detectIndentation": false,
-    "editor.fontSize": 16,
-    "editor.guides.bracketPairs": true,
-    "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.renderControlCharacters": true,
-    "editor.rulers":
-    [
-        80,
-        120
-    ],
-    "editor.showFoldingControls": "always",
-    "editor.snippetSuggestions": "top",
-    "editor.tabSize": 2,
-    "emmet.includeLanguages":
-    {
-        "erb": "html"
-    },
-    "emmet.showSuggestionsAsSnippets": true,
-    "emmet.triggerExpansionOnTab": true,
-    "explorer.confirmDelete": false,
-    "files.exclude":
-    {
-        "**/.DS_Store": true,
-        "**/.egg-info": true,
-        "**/.git": true,
-        ".asset-cache": true,
-        ".bundle": true,
-        ".ipynb_checkpoints": true,
-        ".pytest_cache": true,
-        ".sass-cache": true,
-        ".svn": true,
-        "__pycache__": true,
-        "_site": true,
-        "build": true,
-        "coverage": true,
-        "dist": true,
-        "log": true,
-        "node_modules": true,
-        "public/packs": true,
-        "tmp": true,
-        ".vscode": true
-    },
-    "files.hotExit": "off",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "files.watcherExclude":
-    {
-        "**/audits/**": true,
-        "**/coverage/**": true,
-        "**/log/**": true,
-        "**/node_modules/**": true,
-        "**/tmp/**": true,
-        "**/vendor/**": true
-    },
-    "git.enabled": false,
-    "python.defaultInterpreterPath": "~/.pyenv/shims/python",
-    "python.formatting.provider": "yapf",
-    "python.terminal.activateEnvironment": false,
-    "ruby.lint":
-    {
-        "rubocop": true
-    },
-    "telemetry.telemetryLevel": "off",
-    "window.restoreWindows": "none",
-    "workbench.colorCustomizations": {
-      "tab.activeBackground": "#F44336",
-      "tab.activeBorder": "#FFEB3B"
-    },
-    "workbench.iconTheme": "vscode-great-icons",
-    "workbench.settings.editor": "json",
-    "workbench.settings.openDefaultSettings": true,
-    "workbench.settings.useSplitJSON": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.inlineSuggest.enabled": true,
-    "files.autoSave": "onFocusChange",
-    "ruby.useLanguageServer": true,
-    "ruby.intellisense": "rubyLocate",
-    "editor.fontFamily": "  ",
-    "editor.fontLigatures": true,
-    "editor.wordWrap": "on",
-    "github.copilot.enable": {
-      "*": true,
-      "plaintext": true,
-      "markdown": false,
-      "scminput": false,
-      "yaml": false,
-      "html.erb": true,
-      "ruby": true,
-      "scss": true,
-      "javascript": true,
-      "html": true
-    },
-    "workbench.colorTheme": "Tokyo Night",
-    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
-    "tailwindCSS.includeLanguages": {
-      "erb": "html",
-    },
-    "files.associations": {
-      "*.html.erb": "erb"
+  "[python]":
+  {
+    "editor.bracketPairColorization.enabled": false,
+    "editor.guides.bracketPairs": false,
+    "editor.tabSize": 4
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.detectIndentation": false,
+  "editor.fontSize": 16,
+  "editor.guides.bracketPairs": true,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderControlCharacters": true,
+  "editor.rulers":
+  [
+    80,
+    120
+  ],
+  "editor.showFoldingControls": "always",
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "emmet.includeLanguages":
+  {
+    "erb": "html"
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.confirmDelete": false,
+  "files.exclude":
+  {
+    "**/.DS_Store": true,
+    "**/.egg-info": true,
+    "**/.git": true,
+    ".asset-cache": true,
+    ".bundle": true,
+    ".ipynb_checkpoints": true,
+    ".pytest_cache": true,
+    ".sass-cache": true,
+    ".svn": true,
+    "__pycache__": true,
+    "_site": true,
+    "build": true,
+    "coverage": true,
+    "dist": true,
+    "log": true,
+    "node_modules": true,
+    "public/packs": true,
+    "tmp": true,
+    ".vscode": true
+  },
+  "files.hotExit": "off",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude":
+  {
+    "**/audits/**": true,
+    "**/coverage/**": true,
+    "**/log/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/vendor/**": true
+  },
+  "git.enabled": false,
+  "python.defaultInterpreterPath": "~/.pyenv/shims/python",
+  "python.formatting.provider": "yapf",
+  "python.terminal.activateEnvironment": false,
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "telemetry.telemetryLevel": "off",
+  "window.restoreWindows": "none",
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#F44336",
+    "tab.activeBorder": "#FFEB3B"
+  },
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.settings.editor": "json",
+  "workbench.settings.openDefaultSettings": true,
+  "workbench.settings.useSplitJSON": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.inlineSuggest.enabled": true,
+  "files.autoSave": "onFocusChange",
+  "ruby.useLanguageServer": true,
+  "ruby.intellisense": "rubyLocate",
+  "editor.fontFamily": "  ",
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false,
+    "yaml": false,
+    "html.erb": true,
+    "ruby": true,
+    "scss": true,
+    "javascript": true,
+    "html": true
+  },
+  "workbench.colorTheme": "Tokyo Night",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+  "tailwindCSS.includeLanguages": {
+    "erb": "html",
+  },
+  "files.associations": {
+    "*.html.erb": "erb"
   },
   "terminal.integrated.env.osx": {},
   "security.workspace.trust.untrustedFiles": "open",
@@ -144,4 +143,8 @@
     "identifier": "rbenv"
   },
   "editor.formatOnSave": true,
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
+    "editor.formatOnSave": true
+  }
 }

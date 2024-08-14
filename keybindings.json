@@ -17,5 +17,9 @@
   {
     "key": "ctrl+shift+f",
     "command": "search.action.openEditor"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "editor.emmet.action.balanceOut"
   }
 ]

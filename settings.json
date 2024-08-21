@@ -1,6 +1,5 @@
 {
-  "[python]":
-  {
+  "[python]": {
     "editor.bracketPairColorization.enabled": false,
     "editor.guides.bracketPairs": false,
     "editor.tabSize": 4
@@ -12,23 +11,17 @@
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderControlCharacters": true,
-  "editor.rulers":
-  [
-    80,
-    120
-  ],
+  "editor.rulers": [80, 120],
   "editor.showFoldingControls": "always",
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
-  "emmet.includeLanguages":
-  {
+  "emmet.includeLanguages": {
     "erb": "html"
   },
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
   "explorer.confirmDelete": false,
-  "files.exclude":
-  {
+  "files.exclude": {
     "**/.DS_Store": true,
     "**/.egg-info": true,
     "**/.git": true,
@@ -53,8 +46,7 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "files.watcherExclude":
-  {
+  "files.watcherExclude": {
     "**/audits/**": true,
     "**/coverage/**": true,
     "**/log/**": true,
@@ -62,7 +54,6 @@
     "**/tmp/**": true,
     "**/vendor/**": true
   },
-  "git.enabled": false,
   "python.defaultInterpreterPath": "~/.pyenv/shims/python",
   "python.formatting.provider": "yapf",
   "python.terminal.activateEnvironment": false,
@@ -102,11 +93,9 @@
   "workbench.colorTheme": "Tokyo Night",
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
   "tailwindCSS.includeLanguages": {
-    "erb": "html",
+    "erb": "html"
   },
-  "tailwindCSS.experimental.classRegex": [
-    "\\bclass:\\s*['\"]([^'\"]*)['\"]"
-  ],
+  "tailwindCSS.experimental.classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"],
   "files.associations": {
     "*.html.erb": "erb"
   },

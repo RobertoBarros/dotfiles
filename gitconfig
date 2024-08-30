@@ -52,3 +52,5 @@
 [user]
 	email = roberto.f.barros@gmail.com
 	name = Roberto Barros
+[init]
+	defaultBranch = main

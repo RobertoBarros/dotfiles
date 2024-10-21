@@ -60,7 +60,6 @@
   "ruby.lint": {
     "rubocop": true
   },
-  "telemetry.telemetryLevel": "off",
   "window.restoreWindows": "none",
   "workbench.colorCustomizations": {
     "tab.activeBackground": "#F44336",
@@ -139,5 +138,9 @@
     "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
     "editor.formatOnSave": true
   },
-  "editor.foldingStrategy": "indentation"
+  "editor.foldingStrategy": "indentation",
+  "codeium.enableConfig": {
+    "*": true,
+    "erb": true
+  }
 }

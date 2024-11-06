@@ -98,4 +98,13 @@
     "codeium.enableConfig": {
       "*": false
     }
+    "editor.formatOnSave": true,
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[erb]": {
+      "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
+      "editor.formatOnSave": true
+    },
+    "editor.foldingStrategy": "indentation"
 }

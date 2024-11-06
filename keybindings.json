@@ -9,5 +9,9 @@
     "key": "cmd+shift+v",
     "command": "pasteAndIndent.action",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "editor.emmet.action.balanceOut"
   }
 ]

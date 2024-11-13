@@ -97,7 +97,7 @@
     "liveshare.anonymousGuestApproval": "accept",
     "codeium.enableConfig": {
       "*": false
-    }
+    },
     "editor.formatOnSave": true,
     "[html]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"

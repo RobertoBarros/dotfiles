@@ -83,10 +83,14 @@
   },
   "workbench.colorTheme": "Tokyo Night",
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
-  "tailwindCSS.includeLanguages": {
-    "erb": "html"
-  },
   "tailwindCSS.experimental.classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"],
+
+  "tailwindCSS.includeLanguages": {
+    "erb": "html",
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css"
+  },
   "files.associations": {
     "*.html.erb": "erb"
   },
@@ -137,7 +141,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[typescript]": {
+  "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

@@ -139,7 +139,7 @@ fi
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-# source /Users/roberto/.docker/init-zsh.sh || true # Added by Docker Desktop
+
 
 # Instalado com `brew install powerlevel10k`
 if [[ -f /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme ]]; then
@@ -151,6 +151,10 @@ fi
 export PATH="/usr/local/postgresql@16/bin:$PATH"
 export PATH="/usr/local/opt/postgresql@16/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
+
 
 # eval "$(github-copilot-cli alias -- "$0")"
 

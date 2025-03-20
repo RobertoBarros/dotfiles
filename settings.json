@@ -54,16 +54,11 @@
     "**/tmp/**": true,
     "**/vendor/**": true
   },
-  "python.defaultInterpreterPath": "~/.pyenv/shims/python",
-  "python.formatting.provider": "yapf",
-  "python.terminal.activateEnvironment": false,
-  "ruby.lint": {
-    "rubocop": true
-  },
   "window.restoreWindows": "none",
   "workbench.colorCustomizations": {
-    "tab.activeBackground": "#F44336",
-    "tab.activeBorder": "#FFEB3B"
+    "tab.activeBackground": "#831911",
+    "tab.activeBorder": "#FFEB3B",
+    "tab.activeForeground": "#FFEB3B"
   },
   "workbench.iconTheme": "vscode-great-icons",
   "workbench.settings.editor": "json",
@@ -72,9 +67,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "editor.inlineSuggest.enabled": true,
   "files.autoSave": "onFocusChange",
-  "ruby.useLanguageServer": true,
-  "ruby.intellisense": "rubyLocate",
-  "editor.fontFamily": "  ",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "github.copilot.enable": {
@@ -106,8 +98,6 @@
   },
   "terminal.integrated.env.linux": {},
   "terminal.integrated.fontSize": 16,
-  "window.zoomLevel": 0,
-  "svelte.enable-ts-plugin": true,
   "rubyLsp.enabledFeatures": {
     "codeActions": true,
     "diagnostics": true,
@@ -138,9 +128,16 @@
     "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
     "editor.formatOnSave": true
   },
+  "inlineFold.regex": "(class=|className=|class:\\s*)(({(`|))|(['\"`]))(.*?)(\\2|(\\4)})",
   "editor.foldingStrategy": "indentation",
-  "codeium.enableConfig": {
-    "*": true,
-    "erb": true
+  "window.zoomLevel": 0,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

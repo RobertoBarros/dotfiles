@@ -143,5 +143,7 @@
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "git.blame.editorDecoration.enabled": false,
+  "chat.agent.enabled": true
 }

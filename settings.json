@@ -40,7 +40,7 @@
     "node_modules": true,
     "public/packs": true,
     "tmp": true,
-    ".vscode": true
+    "**/app/assets/svg/**": true
   },
   "files.hotExit": "off",
   "files.insertFinalNewline": true,
@@ -52,7 +52,8 @@
     "**/log/**": true,
     "**/node_modules/**": true,
     "**/tmp/**": true,
-    "**/vendor/**": true
+    "**/vendor/**": true,
+    "**/app/assets/svg/**": true
   },
   "window.restoreWindows": "none",
   "workbench.colorCustomizations": {
@@ -121,9 +122,7 @@
     "workspaceSymbol": true,
     "signatureHelp": true
   },
-  "[ruby]": {
-    "editor.defaultFormatter": "testdouble.vscode-standard-ruby"
-  },
+  "[ruby]": {},
   "rubyLsp.rubyVersionManager": {
     "identifier": "rbenv"
   },
@@ -145,5 +144,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.blame.editorDecoration.enabled": false,
-  "chat.agent.enabled": true
+  "chat.agent.enabled": true,
+  "git.confirmSync": false
 }

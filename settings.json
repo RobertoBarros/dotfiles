@@ -75,7 +75,7 @@
     "plaintext": true,
     "markdown": false,
     "scminput": false,
-    "yaml": false,
+    "yaml": true,
     "html.erb": true,
     "ruby": true,
     "scss": true,

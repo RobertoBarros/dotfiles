@@ -1,36 +1,105 @@
 {
+  // ===== Editor: Aparência e comportamento =====
+  "editor.bracketPairColorization.enabled": true, // Destaca pares de colchetes para facilitar leitura de blocos
+  "editor.detectIndentation": false, // Sempre usa o tamanho de tab definido, ignora autodetecção do arquivo
+  "editor.fontLigatures": true, // Usa ligaduras de fonte para melhorar leitura (ex: !=, ->)
+  "editor.fontSize": 16, // Tamanho da fonte maior para facilitar leitura
+  "editor.foldingStrategy": "indentation", // Dobra de código baseada na indentação (útil para Ruby, JS, etc)
+  "editor.formatOnSave": true, // Formata automaticamente ao salvar, mantém código padronizado
+  "editor.guides.bracketPairs": true, // Mostra linhas guias entre colchetes, facilita localizar blocos
+  "editor.inlineSuggest.enabled": true, // Ativa sugestões inline tipo GitHub Copilot
+  "editor.minimap.enabled": false, // Desativa minimapa lateral para evitar poluição visual
+  "editor.multiCursorModifier": "ctrlCmd", // Multi-cursor usando Ctrl/Cmd para agilizar edições múltiplas
+  "editor.quickSuggestions": {
+    "other": "on",
+    "strings": "on"
+  }, // Sugestões rápidas ligadas até para strings
+  "editor.renderControlCharacters": true, // Mostra caracteres de controle invisíveis
+  "editor.rulers": [80, 120], // Linhas guia para respeitar limites de linha (padrão de projetos)
+  "editor.showFoldingControls": "always", // Sempre mostra os ícones de folding (expande/contrai blocos)
+  "editor.snippetSuggestions": "top", // Snippets sempre no topo das sugestões para acelerar digitação
+  "editor.tabSize": 2, // 2 espaços para identação, padrão frontend e Ruby
+  "editor.wordWrap": "on", // Quebra de linha automática, evita scroll lateral
+
+  // ===== Python: configurações específicas =====
   "[python]": {
-    "editor.bracketPairColorization.enabled": false,
-    "editor.guides.bracketPairs": false,
-    "editor.tabSize": 4
+    "editor.bracketPairColorization.enabled": false, // Menos poluição visual em Python
+    "editor.guides.bracketPairs": false, // Desliga guias em Python (não usa muitos blocos delimitados)
+    "editor.tabSize": 4 // 4 espaços, padrão Python
   },
-  "editor.bracketPairColorization.enabled": true,
-  "editor.detectIndentation": false,
-  "editor.fontSize": 16,
-  "editor.guides.bracketPairs": true,
-  "editor.minimap.enabled": false,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderControlCharacters": true,
-  "editor.rulers": [80, 120],
-  "editor.showFoldingControls": "always",
-  "editor.snippetSuggestions": "top",
-  "editor.tabSize": 2,
+
+  // ===== ERB/HTML/JS/JSON: formatters =====
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify", // Formata ERB usando extensão própria
+    "editor.formatOnSave": true // Sempre formata ao salvar arquivos ERB
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Usa Prettier para HTML
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Usa Prettier para JS
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Usa Prettier para JSONC
+  },
+  "[ruby]": {}, // Vazio, configurações LSP abaixo
+
+  // ===== RubyLSP =====
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true, // Sugestões automáticas de correção/refatoração
+    "codeLens": true, // Informações contextuais direto no editor
+    "completion": true, // Autocomplete avançado
+    "definition": true, // Vai para definição do método/classe
+    "diagnostics": true, // Warnings/erros em tempo real
+    "documentHighlights": true, // Destaque de símbolos no arquivo
+    "documentLink": true, // Suporte a links contextuais
+    "documentSymbols": true, // Mostra classes/métodos em árvore
+    "foldingRanges": true, // Suporte a folding inteligente
+    "formatting": true, // Formata o código Ruby
+    "hover": true, // Mostra doc ao passar o mouse
+    "inlayHint": true, // Dicas de tipos, parâmetros etc. inline
+    "onTypeFormatting": true, // Formatação automática enquanto digita
+    "selectionRanges": true, // Expande seleção por contexto sintático
+    "semanticHighlighting": true, // Realce semântico extra
+    "signatureHelp": true, // Mostra parâmetros de métodos/funções
+    "workspaceSymbol": true // Busca símbolos no projeto inteiro
+  }, // Ativa todas as features úteis do LSP para Ruby
+  "rubyLsp.rubyVersionManager": {
+    "identifier": "rbenv" // Usa rbenv para gerenciar versões Ruby (compatível com seu ambiente)
+  },
+
+  // ===== Emmet =====
   "emmet.includeLanguages": {
-    "erb": "html"
+    "erb": "html" // Permite autocomplete do Emmet em arquivos ERB
   },
-  "emmet.showSuggestionsAsSnippets": true,
-  "emmet.triggerExpansionOnTab": true,
-  "explorer.confirmDelete": false,
+  "emmet.showSuggestionsAsSnippets": true, // Mostra sugestões Emmet como snippets
+  "emmet.triggerExpansionOnTab": true, // Expande abreviações Emmet ao apertar Tab
+
+  // ===== Tailwind CSS =====
+  "tailwindCSS.experimental.classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"], // Permite autocomplete em variantes do Tailwind
+  "tailwindCSS.includeLanguages": {
+    "css": "css",
+    "erb": "html",
+    "html": "html",
+    "javascript": "javascript"
+  }, // Ativa Tailwind em vários tipos de arquivo (erb, js, etc)
+
+  // ===== Arquivos: Associação e exclusão =====
+  "files.associations": {
+    "*.html.erb": "erb" // Abre arquivos .html.erb com syntax highlight correto
+  },
+  "files.autoSave": "onFocusChange", // Salva arquivo automaticamente ao perder foco (evita perder trabalho)
   "files.exclude": {
-    "**/.DS_Store": true,
-    "**/.egg-info": true,
-    "**/.git": true,
     ".asset-cache": true,
     ".bundle": true,
     ".ipynb_checkpoints": true,
     ".pytest_cache": true,
     ".sass-cache": true,
     ".svn": true,
+    "**/.DS_Store": true,
+    "**/.egg-info": true,
+    "**/.git": true,
+    "**/app/assets/svg/**": true,
     "__pycache__": true,
     "_site": true,
     "build": true,
@@ -39,111 +108,71 @@
     "log": true,
     "node_modules": true,
     "public/packs": true,
-    "tmp": true,
-    "**/app/assets/svg/**": true
-  },
-  "files.hotExit": "off",
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
+    "tmp": true
+  }, // Esconde arquivos e pastas irrelevantes do explorer
+  "files.hotExit": "off", // Não tenta restaurar arquivos não salvos ao fechar VSCode
+  "files.insertFinalNewline": true, // Garante linha em branco no final de cada arquivo
+  "files.trimFinalNewlines": true, // Remove linhas em branco extras no final
+  "files.trimTrailingWhitespace": true, // Remove espaços desnecessários ao salvar
   "files.watcherExclude": {
+    "**/app/assets/svg/**": true,
     "**/audits/**": true,
     "**/coverage/**": true,
     "**/log/**": true,
     "**/node_modules/**": true,
     "**/tmp/**": true,
-    "**/vendor/**": true,
-    "**/app/assets/svg/**": true
-  },
-  "window.restoreWindows": "none",
+    "**/vendor/**": true
+  }, // Ignora watcher para essas pastas/arquivos (menos uso de CPU)
+
+  // ===== Terminal =====
+  "terminal.integrated.env.linux": {}, // Variáveis de ambiente customizadas para Linux (vazio)
+  "terminal.integrated.env.osx": {}, // Variáveis de ambiente customizadas para MacOS (vazio)
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font", // Usa fonte com ícones para terminal integrado
+  "terminal.integrated.fontSize": 16, // Tamanho da fonte do terminal para melhor legibilidade
+
+  // ===== Workbench (UI/UX) =====
   "workbench.colorCustomizations": {
     "tab.activeBackground": "#831911",
     "tab.activeBorder": "#FFEB3B",
     "tab.activeForeground": "#FFEB3B"
-  },
-  "workbench.iconTheme": "vscode-great-icons",
-  "workbench.settings.editor": "json",
-  "workbench.settings.openDefaultSettings": true,
-  "workbench.settings.useSplitJSON": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "editor.inlineSuggest.enabled": true,
-  "files.autoSave": "onFocusChange",
-  "editor.fontLigatures": true,
-  "editor.wordWrap": "on",
+  }, // Personaliza cor de abas ativas (maior contraste/visibilidade)
+  "workbench.colorTheme": "Tokyo Night", // Tema visual do VSCode
+  "workbench.iconTheme": "vscode-great-icons", // Tema de ícones para arquivos e pastas
+  "workbench.settings.editor": "json", // Editor de settings padrão em JSON
+  "workbench.settings.openDefaultSettings": true, // Sempre abre settings defaults ao buscar configs
+  "workbench.settings.useSplitJSON": true, // Editor de settings dividido em duas colunas (user/project)
+  "workbench.startupEditor": "newUntitledFile", // Sempre inicia com novo arquivo vazio
+
+  // ===== Window =====
+  "window.restoreWindows": "none", // Não restaura janelas abertas na última sessão, sempre fresh start
+  "window.zoomLevel": 0, // Zoom padrão (100%)
+
+  // ===== Git =====
+  "git.blame.editorDecoration.enabled": false, // Não polui o editor com info de blame do git
+  "git.confirmSync": false, // Não pede confirmação ao sincronizar, agiliza workflow
+
+  // ===== GitHub Copilot =====
   "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": false,
-    "scminput": false,
-    "yaml": true,
+    "*": true, // Ativa Copilot em todos os tipos de arquivo
+    "html": true,
     "html.erb": true,
+    "javascript": true,
+    "markdown": false, // Desativa Copilot para markdown
+    "plaintext": true,
     "ruby": true,
     "scss": true,
-    "javascript": true,
-    "html": true
-  },
-  "workbench.colorTheme": "Tokyo Night",
-  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
-  "tailwindCSS.experimental.classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"],
+    "scminput": false, // Desativa para input de commit
+    "yaml": true
+  }, // Define onde o Copilot pode sugerir código/texto
 
-  "tailwindCSS.includeLanguages": {
-    "erb": "html",
-    "html": "html",
-    "javascript": "javascript",
-    "css": "css"
-  },
-  "files.associations": {
-    "*.html.erb": "erb"
-  },
-  "terminal.integrated.env.osx": {},
-  "security.workspace.trust.untrustedFiles": "open",
-  "editor.quickSuggestions": {
-    "other": "on",
-    "strings": "on"
-  },
-  "terminal.integrated.env.linux": {},
-  "terminal.integrated.fontSize": 16,
-  "rubyLsp.enabledFeatures": {
-    "codeActions": true,
-    "diagnostics": true,
-    "documentHighlights": true,
-    "documentLink": true,
-    "documentSymbols": true,
-    "foldingRanges": true,
-    "formatting": true,
-    "hover": true,
-    "inlayHint": true,
-    "onTypeFormatting": true,
-    "selectionRanges": true,
-    "semanticHighlighting": true,
-    "completion": true,
-    "codeLens": true,
-    "definition": true,
-    "workspaceSymbol": true,
-    "signatureHelp": true
-  },
-  "[ruby]": {},
-  "rubyLsp.rubyVersionManager": {
-    "identifier": "rbenv"
-  },
-  "editor.formatOnSave": true,
-  "[erb]": {
-    "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
-    "editor.formatOnSave": true
-  },
-  "inlineFold.regex": "(class=|className=|class:\\s*)(({(`|))|(['\"`]))(.*?)(\\2|(\\4)})",
-  "editor.foldingStrategy": "indentation",
-  "window.zoomLevel": 0,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "git.blame.editorDecoration.enabled": false,
-  "chat.agent.enabled": true,
-  "git.confirmSync": false
+  // ===== Clipboard/Seleção =====
+  "copyOnSelect.copyOnKeyboardSelection": true, // Copia texto automaticamente ao selecionar via teclado (eficiência)
+  "copyOnSelect.copyOnMouseSelection": true, // Copia texto automaticamente ao selecionar com mouse
+  "copyOnSelect.trimEnd": true, // Remove espaços à direita ao copiar
+  "copyOnSelect.trimStart": false, // Mantém espaços à esquerda ao copiar
+
+  // ===== Outros =====
+  "chat.agent.enabled": true, // Ativa chat agent (se usar alguma extensão AI/Chat)
+  "inlineFold.regex": "(class=|className=|class:\\s*)(({(`|))|(['\"`]))(.*?)(\\2|(\\4)})", // Regex para dobrar classes inline (Tailwind etc)
+  "security.workspace.trust.untrustedFiles": "open" // Abre arquivos não confiáveis, não bloqueia
 }

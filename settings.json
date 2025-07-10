@@ -165,14 +165,11 @@
     "yaml": true
   }, // Define onde o Copilot pode sugerir código/texto
 
-  // ===== Clipboard/Seleção =====
-  "copyOnSelect.copyOnKeyboardSelection": true, // Copia texto automaticamente ao selecionar via teclado (eficiência)
-  "copyOnSelect.copyOnMouseSelection": true, // Copia texto automaticamente ao selecionar com mouse
-  "copyOnSelect.trimEnd": true, // Remove espaços à direita ao copiar
-  "copyOnSelect.trimStart": false, // Mantém espaços à esquerda ao copiar
-
   // ===== Outros =====
   "chat.agent.enabled": true, // Ativa chat agent (se usar alguma extensão AI/Chat)
   "inlineFold.regex": "(class=|className=|class:\\s*)(({(`|))|(['\"`]))(.*?)(\\2|(\\4)})", // Regex para dobrar classes inline (Tailwind etc)
-  "security.workspace.trust.untrustedFiles": "open" // Abre arquivos não confiáveis, não bloqueia
+  "security.workspace.trust.untrustedFiles": "open",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  } // Abre arquivos não confiáveis, não bloqueia
 }

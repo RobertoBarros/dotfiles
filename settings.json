@@ -153,15 +153,15 @@
 
   // ===== GitHub Copilot =====
   "github.copilot.enable": {
-    "*": true, // Ativa Copilot em todos os tipos de arquivo
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false,
     "html": true,
     "html.erb": true,
     "javascript": true,
-    "markdown": false, // Desativa Copilot para markdown
-    "plaintext": true,
     "ruby": true,
     "scss": true,
-    "scminput": false, // Desativa para input de commit
     "yaml": true
   }, // Define onde o Copilot pode sugerir código/texto
 

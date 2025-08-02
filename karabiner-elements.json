@@ -1,0 +1,87 @@
+{
+  "description": "Launch apps by cmd+number",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "1",
+        "modifiers": { "mandatory": ["command"] }
+      },
+      "to": [{ "shell_command": "open '/Applications/Google Chrome.app'" }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "2",
+        "modifiers": { "mandatory": ["command"] }
+      },
+      "to": [
+        { "shell_command": "open '/Applications/Visual Studio Code.app'" }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "3",
+        "modifiers": { "mandatory": ["command"] }
+      },
+      "to": [{ "shell_command": "open '/Applications/Tabby.app'" }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "4",
+        "modifiers": { "mandatory": ["command"] }
+      },
+      "to": [{ "shell_command": "open '/Applications/ChatGPT.app'" }],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "5",
+        "modifiers": { "mandatory": ["command"] }
+      },
+      "to": [
+        {
+          "shell_command": "open '/Applications/WhatsApp.localized/WhatsApp.app'"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "1",
+        "modifiers": { "mandatory": ["command", "option"] }
+      },
+      "to": [
+        {
+          "shell_command": "/Users/roberto/code/RobertoBarros/dotfiles/open_chrome_in_tab.sh localhost"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "2",
+        "modifiers": { "mandatory": ["command", "option"] }
+      },
+      "to": [
+        {
+          "shell_command": "/Users/roberto/code/RobertoBarros/dotfiles/open_chrome_in_tab.sh youtube"
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "from": {
+        "key_code": "3",
+        "modifiers": { "mandatory": ["command", "option"] }
+      },
+      "to": [
+        {
+          "shell_command": "/Users/roberto/code/RobertoBarros/dotfiles/open_chrome_in_tab.sh gmail"
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}

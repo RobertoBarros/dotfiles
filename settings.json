@@ -171,5 +171,8 @@
   "security.workspace.trust.untrustedFiles": "open",
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   } // Abre arquivos não confiáveis, não bloqueia
 }

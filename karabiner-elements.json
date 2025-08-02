@@ -1,45 +1,30 @@
 {
-  "description": "Launch apps by cmd+number",
+  "description": "Launch apps by F1-F5 and shift+F1/F2/F3",
   "manipulators": [
     {
-      "from": {
-        "key_code": "1",
-        "modifiers": { "mandatory": ["command"] }
-      },
+      "from": { "key_code": "f1" },
       "to": [{ "shell_command": "open '/Applications/Google Chrome.app'" }],
       "type": "basic"
     },
     {
-      "from": {
-        "key_code": "2",
-        "modifiers": { "mandatory": ["command"] }
-      },
+      "from": { "key_code": "f2" },
       "to": [
         { "shell_command": "open '/Applications/Visual Studio Code.app'" }
       ],
       "type": "basic"
     },
     {
-      "from": {
-        "key_code": "3",
-        "modifiers": { "mandatory": ["command"] }
-      },
+      "from": { "key_code": "f3" },
       "to": [{ "shell_command": "open '/Applications/Tabby.app'" }],
       "type": "basic"
     },
     {
-      "from": {
-        "key_code": "4",
-        "modifiers": { "mandatory": ["command"] }
-      },
+      "from": { "key_code": "f4" },
       "to": [{ "shell_command": "open '/Applications/ChatGPT.app'" }],
       "type": "basic"
     },
     {
-      "from": {
-        "key_code": "5",
-        "modifiers": { "mandatory": ["command"] }
-      },
+      "from": { "key_code": "f5" },
       "to": [
         {
           "shell_command": "open '/Applications/WhatsApp.localized/WhatsApp.app'"
@@ -48,10 +33,7 @@
       "type": "basic"
     },
     {
-      "from": {
-        "key_code": "1",
-        "modifiers": { "mandatory": ["command", "option"] }
-      },
+      "from": { "key_code": "f1", "modifiers": { "mandatory": ["shift"] } },
       "to": [
         {
           "shell_command": "/Users/roberto/code/RobertoBarros/dotfiles/open_chrome_in_tab.sh localhost"
@@ -60,10 +42,7 @@
       "type": "basic"
     },
     {
-      "from": {
-        "key_code": "2",
-        "modifiers": { "mandatory": ["command", "option"] }
-      },
+      "from": { "key_code": "f2", "modifiers": { "mandatory": ["shift"] } },
       "to": [
         {
           "shell_command": "/Users/roberto/code/RobertoBarros/dotfiles/open_chrome_in_tab.sh youtube"
@@ -72,10 +51,7 @@
       "type": "basic"
     },
     {
-      "from": {
-        "key_code": "3",
-        "modifiers": { "mandatory": ["command", "option"] }
-      },
+      "from": { "key_code": "f3", "modifiers": { "mandatory": ["shift"] } },
       "to": [
         {
           "shell_command": "/Users/roberto/code/RobertoBarros/dotfiles/open_chrome_in_tab.sh gmail"

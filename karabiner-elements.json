@@ -33,7 +33,7 @@
       "type": "basic"
     },
     {
-      "from": { "key_code": "f1", "modifiers": { "mandatory": ["shift"] } },
+      "from": { "key_code": "f1", "modifiers": { "mandatory": ["command"] } },
       "to": [
         {
           "shell_command": "/Users/roberto/code/RobertoBarros/dotfiles/open_chrome_in_tab.sh localhost"
@@ -42,7 +42,7 @@
       "type": "basic"
     },
     {
-      "from": { "key_code": "f2", "modifiers": { "mandatory": ["shift"] } },
+      "from": { "key_code": "f2", "modifiers": { "mandatory": ["command"] } },
       "to": [
         {
           "shell_command": "/Users/roberto/code/RobertoBarros/dotfiles/open_chrome_in_tab.sh youtube"
@@ -51,7 +51,7 @@
       "type": "basic"
     },
     {
-      "from": { "key_code": "f3", "modifiers": { "mandatory": ["shift"] } },
+      "from": { "key_code": "f3", "modifiers": { "mandatory": ["command"] } },
       "to": [
         {
           "shell_command": "/Users/roberto/code/RobertoBarros/dotfiles/open_chrome_in_tab.sh gmail"

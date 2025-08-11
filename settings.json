@@ -174,5 +174,7 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  } // Abre arquivos não confiáveis, não bloqueia
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.editing.confirmEditRequestRemoval": false // Abre arquivos não confiáveis, não bloqueia
 }

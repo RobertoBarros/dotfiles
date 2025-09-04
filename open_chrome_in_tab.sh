@@ -10,6 +10,9 @@ case "$1" in
   gmail)
     URL="https://mail.google.com"
     ;;
+  chatgpt)
+    URL="https://chatgpt.com/"
+    ;;
   *)
     echo "Alias '$1' not found."
     exit 1

@@ -15,7 +15,7 @@ alias gitclean='git branch --merged | egrep -v "(^\*|master|main|dev)" | xargs g
 alias l='eza -l --icons --no-permissions --no-user --git -F'
 alias ll='eza -la --icons --no-permissions --no-user --git -F '
 
-alias lewagon='pwb | pbcopy && git -C ~/code/RobertoBarros/dotfiles checkout lewagon && exec zsh && cd pbpaste'
+alias lewagon='CURR=$(pwd) && git -C ~/code/RobertoBarros/dotfiles checkout lewagon && cd "$CURR" && exec zsh'
 
 alias gitignore-create='touch .gitignore && echo "node_modules/" >> .gitignore && git rm -r --cached node_modules ; git status'
 

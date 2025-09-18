@@ -30,12 +30,9 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 export PATH="$HOME/.rbenv/bin:$PATH"
 type -a rbenv >/dev/null && eval "$(rbenv init -)"
 
-# nvm lazy loading
-export NVM_DIR="$HOME/.nvm"
-nvm() { unset -f nvm; . "$NVM_DIR/nvm.sh"; nvm "$@"; }
-node() { unset -f node; . "$NVM_DIR/nvm.sh"; node "$@"; }
-npm()  { unset -f npm;  . "$NVM_DIR/nvm.sh"; npm "$@"; }
-yarn() { unset -f yarn; . "$NVM_DIR/nvm.sh"; yarn "$@"; }
+# This loads nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" #
 
 
 ##### 3) Caminhos (PATH)  ##############################################################

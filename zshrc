@@ -158,6 +158,9 @@ export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
 
 # eval "$(github-copilot-cli alias -- "$0")"
 
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/roberto/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"

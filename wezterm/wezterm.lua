@@ -4,6 +4,7 @@ local act = wezterm.action
 
 local config = {}
 
+config.tab_max_width = 999
 -- Theme
 config.color_scheme = "Catppuccin Mocha"
 config.window_background_opacity = 0.95
@@ -11,6 +12,12 @@ config.colors = {
   cursor_bg = "#ffffff",
   cursor_fg = "#000000",
   cursor_border = "#ffffff",
+  tab_bar = {
+    active_tab = {
+      bg_color = "#5817c1",
+      fg_color = "#ffffff",
+    },
+  },
 }
 
 -- Font

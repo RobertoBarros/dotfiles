@@ -22,4 +22,9 @@ alias gitignore-create='touch .gitignore && echo "node_modules/" >> .gitignore &
 
 alias remove-node-modules="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
 
+# Muda o título da tab do WezTerm
+tab() {
+  wezterm cli set-tab-title "$*"
+}
+
 unalias lt # para usar o localtunnel

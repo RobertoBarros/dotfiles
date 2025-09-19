@@ -6,7 +6,7 @@ local config = {}
 
 config.tab_max_width = 999
 -- Theme
-config.color_scheme = "Catppuccin Mocha"
+config.color_scheme = "Tokyo Night"
 config.window_background_opacity = 0.98
 config.colors = {
   cursor_bg = "#ffffff",
@@ -24,7 +24,7 @@ config.colors = {
 }
 
 -- Font
-config.font = wezterm.font("JetBrainsMonoNL Nerd Font")
+config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 15.0
 config.line_height = 1.08
 

@@ -3,6 +3,8 @@
   "editor.bracketPairColorization.enabled": true, // Destaca pares de colchetes para facilitar leitura de blocos
   "editor.detectIndentation": false, // Sempre usa o tamanho de tab definido, ignora autodetecção do arquivo
   "editor.fontLigatures": true, // Usa ligaduras de fonte para melhorar leitura (ex: !=, ->)
+  "chat.editing.confirmEditRequestRemoval": false,
+  "editor.fontFamily": "JetBrainsMono Nerd Font, Monaco, 'Courier New', monospace" // Abre arquivos não confiáveis, não bloqueia
   "editor.fontSize": 16, // Tamanho da fonte maior para facilitar leitura
   "editor.foldingStrategy": "indentation", // Dobra de código baseada na indentação (útil para Ruby, JS, etc)
   "editor.formatOnSave": true, // Formata automaticamente ao salvar, mantém código padronizado
@@ -127,7 +129,7 @@
   // ===== Terminal =====
   "terminal.integrated.env.linux": {}, // Variáveis de ambiente customizadas para Linux (vazio)
   "terminal.integrated.env.osx": {}, // Variáveis de ambiente customizadas para MacOS (vazio)
-  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font", // Usa fonte com ícones para terminal integrado
+  "terminal.integrated.fontFamily": "JetBrainsMonoNL Nerd Font", // Usa fonte com ícones para terminal integrado
   "terminal.integrated.fontSize": 16, // Tamanho da fonte do terminal para melhor legibilidade
 
   // ===== Workbench (UI/UX) =====
@@ -176,5 +178,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "github.copilot.nextEditSuggestions.enabled": true,
-  "chat.editing.confirmEditRequestRemoval": false // Abre arquivos não confiáveis, não bloqueia
+
 }

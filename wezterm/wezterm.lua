@@ -7,7 +7,7 @@ local config = {}
 config.tab_max_width = 999
 -- Theme
 config.color_scheme = "Catppuccin Mocha"
-config.window_background_opacity = 0.95
+config.window_background_opacity = 0.98
 config.colors = {
   cursor_bg = "#ffffff",
   cursor_fg = "#000000",
@@ -17,6 +17,9 @@ config.colors = {
       bg_color = "#5817c1",
       fg_color = "#ffffff",
     },
+  },
+  active_pane = {
+    bg_color = "#ff0000",
   },
 }
 
@@ -55,6 +58,17 @@ config.keys = {
   { key = "d",          mods = "CMD",       action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
   { key = "d",          mods = "CMD|SHIFT", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
   { key = "w", mods = "CMD", action = act.CloseCurrentPane({ confirm = false }) },
+  { key = "LeftArrow",  mods = "SHIFT", action = act.ActivatePaneDirection("Left") },
+  { key = "RightArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Right") },
+  { key = "UpArrow",    mods = "SHIFT", action = act.ActivatePaneDirection("Up") },
+  { key = "DownArrow",  mods = "SHIFT", action = act.ActivatePaneDirection("Down") },
+}
+
+
+-- Highlight active pane by dimming inactive panes
+config.inactive_pane_hsb = {
+  saturation = 0.9,
+  brightness = 0.4,
 }
 
 return config

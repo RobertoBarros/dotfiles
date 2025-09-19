@@ -1,0 +1,53 @@
+-- ~/.config/wezterm/wezterm.lua
+local wezterm = require("wezterm")
+local act = wezterm.action
+
+local config = {}
+
+-- Theme
+config.color_scheme = "Catppuccin Mocha"
+config.window_background_opacity = 0.95
+config.colors = {
+  cursor_bg = "#ffffff",
+  cursor_fg = "#000000",
+  cursor_border = "#ffffff",
+}
+
+-- Font
+config.font = wezterm.font("JetBrainsMonoNL Nerd Font")
+config.font_size = 15.0
+config.line_height = 1.08
+
+-- Window / macOS
+config.window_decorations = "RESIZE"
+config.window_padding = { left = 35, right = 35, top = 15, bottom = 15 }
+config.quit_when_all_windows_are_closed = true
+config.window_close_confirmation = "NeverPrompt"
+config.window_frame = {
+  active_titlebar_bg = "#1e1e2e",
+  inactive_titlebar_bg = "#1e1e2e",
+}
+
+-- Tabs
+-- config.tab_bar_at_bottom = true
+config.window_frame = {
+  font_size = 16.0
+}
+
+-- Scrollback
+config.scrollback_lines = 20000
+
+-- Cursor
+config.default_cursor_style = "SteadyBlock"
+config.cursor_blink_rate = 0
+
+-- Keys
+config.keys = {
+  { key = "RightArrow", mods = "CMD|OPT",   action = act.ActivateTabRelative(1) },
+  { key = "LeftArrow",  mods = "CMD|OPT",   action = act.ActivateTabRelative(-1) },
+  { key = "d",          mods = "CMD",       action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+  { key = "d",          mods = "CMD|SHIFT", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+  { key = "w", mods = "CMD", action = act.CloseCurrentPane({ confirm = false }) },
+}
+
+return config

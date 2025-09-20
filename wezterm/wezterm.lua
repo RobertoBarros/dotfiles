@@ -59,6 +59,7 @@ config.keys = {
   { key = "RightArrow", mods = "SHIFT", action = act.ActivatePaneDirection("Right") },
   { key = "UpArrow",    mods = "SHIFT", action = act.ActivatePaneDirection("Up") },
   { key = "DownArrow",  mods = "SHIFT", action = act.ActivatePaneDirection("Down") },
+  { key = 'k', mods = 'CMD', action = wezterm.action.ClearScrollback 'ScrollbackAndViewport'},
 }
 
 

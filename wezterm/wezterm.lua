@@ -17,10 +17,7 @@ config.colors = {
       bg_color = "#5817c1",
       fg_color = "#ffffff",
     },
-  },
-  active_pane = {
-    bg_color = "#ff0000",
-  },
+  }
 }
 
 -- Font

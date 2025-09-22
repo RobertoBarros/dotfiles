@@ -12,13 +12,17 @@ config.colors = {
   cursor_bg = "#ffffff",
   cursor_fg = "#000000",
   cursor_border = "#ffffff",
+
   tab_bar = {
-    active_tab = {
-      bg_color = "#5817c1",
-      fg_color = "#ffffff",
-    },
-  }
+    active_tab = { bg_color = "#5817c1", fg_color = "#ffffff" },
+  },
+
+  selection_bg = "#b7c14f",
+  selection_fg = "#000000",
+
 }
+
+
 
 -- Font
 config.font = wezterm.font("JetBrainsMono Nerd Font")
@@ -60,6 +64,8 @@ config.keys = {
   { key = "UpArrow",    mods = "SHIFT", action = act.ActivatePaneDirection("Up") },
   { key = "DownArrow",  mods = "SHIFT", action = act.ActivatePaneDirection("Down") },
   { key = 'k', mods = 'CMD', action = wezterm.action.ClearScrollback 'ScrollbackAndViewport'},
+  { key = "f", mods = "CMD", action = act.Search { CaseInSensitiveString = "" } }, -- User ctrl+r during search to toggle case sensitivity
+
 }
 
 

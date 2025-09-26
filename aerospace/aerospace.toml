@@ -73,6 +73,8 @@ ctrl-alt-cmd-up = 'join-with up'
 
 alt-equal = 'resize smart +50'
 alt-minus = 'resize smart -50'
+ctrl-alt-equal = 'resize smart +333'
+ctrl-alt-minus = 'resize smart -333'
 
 alt-0 = 'workspace 10'
 alt-1 = 'workspace 1'

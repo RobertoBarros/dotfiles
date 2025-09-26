@@ -42,6 +42,7 @@ f8 = '''exec-and-forget open -a "Spotify"'''
 shift-f1 = '''exec-and-forget ~/code/RobertoBarros/dotfiles/open_chrome_in_tab.sh localhost'''
 shift-f2 = '''exec-and-forget open -a "Gmail"'''
 shift-f3 = '''exec-and-forget open -a "Youtube"'''
+shift-f4 = '''exec-and-forget open -a "X"'''
 
 alt-comma = 'layout accordion horizontal vertical'
 alt-slash = 'layout tiles horizontal vertical'

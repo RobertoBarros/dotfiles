@@ -98,6 +98,7 @@ alt-shift-9 = 'move-node-to-workspace 9'
 
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 alt-tab = 'workspace-back-and-forth'
+ctrl-alt-r = 'flatten-workspace-tree'
 
 alt-f = 'fullscreen'
 alt-shift-f = 'layout floating tiling'

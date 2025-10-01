@@ -103,8 +103,8 @@ alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 alt-tab = 'workspace-back-and-forth'
 ctrl-alt-r = 'flatten-workspace-tree'
 
-alt-f = 'fullscreen'
-alt-shift-f = 'layout floating tiling'
+alt-f = 'layout floating tiling'
+alt-shift-f = 'fullscreen'
 
 alt-shift-s = 'mode service'
 [mode.service.binding]
